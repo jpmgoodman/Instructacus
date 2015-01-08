@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	<script src="stdcurve.js"></script>
+	<link rel="stylesheet" type="text/css" href="stdcurve.css">
+</head>
+
+
+<body>
+	<h1>Standard Curve Calculator</h1>
+	<h2>Enter your parameters and hit 'Go' to generate your unique recipe</h2>
+	<div class='wrapper'>
+		<form id="form" onsubmit="calculateCurve()">
+			Working range
+			<br>
+			<input type="number" step="any" id="botLimit" class="input" autocomplete="off" placeholder = "Bottom limit" required/>
+			<input type="number" step="any" id="topLimit" class="input" autocomplete="off" placeholder = "Top limit" required/>
+			<br>
+			<input id="unit" class="input" placeholder = "Unit" required/> / mL
+			<br>
+			<br>
+			Number of desired points
+			<br>
+			<input type="number" id="numPoints" class="input" autocomplete="off" placeholder = "0" required/><span id="suggestion">Suggestion</span>
+			<br>
+			<br>
+			Precision (# decimals)
+			<br>
+			<input type="number" id="precision" class="input" placeholder="Precision (# decimals)" required/>
+
+			<br>
+			<br>
+			Volume needed per standard solution
+			<br>
+			<input type="number" step="any" id="volume" class="input" placeholder="0" required/> mL
+			<br>
+			<br>
+			Your available stock solution concentration:
+			<br>
+			<input type="number" step="any" id="stock" class="input" placeholder="0" required />
+			<span id="stockSpan"></span>
+			<br>
+			<br>
+			<br>
+			<br>
+			<input id = "submit" type="submit" value="Go"/>
+		</form>
+		<div id="result"></div>
+	</div>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

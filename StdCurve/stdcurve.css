@@ -1,0 +1,66 @@
+
+* {
+	background:#4099FF;
+}
+h1 {
+	text-align:center;
+}
+h2 {
+	text-align:center;
+	color:white;
+}
+.wrapper{
+	padding:1em 1em 1em 1em;
+	border-radius:5px;	
+	position:relative;
+	height:75vh;
+	width:95vw;
+	margin: 0 auto;
+	background:#f6f5f6;
+}
+#form{
+	background:none;
+}
+.input{
+	background:white;
+}
+#suggestion {
+	display:none;
+	background:none;
+	color:red;
+}
+#stockSpan{
+	background:none;
+}
+
+#submit {
+	cursor:pointer;
+	border: solid #4099FF 2px;
+	color:#4099FF;
+	height:20%;
+	border-radius:5px;
+	font-size:1.5em;
+	background:white;
+	transition:  .25s ease-in-out;
+	-moz-transition:  .25s ease-in-out;
+	-webkit-transition:  .25s ease-in-out;
+}
+#submit:hover {
+	border:solid #4099FF 2px;
+	background:#4099FF;
+	color:white;
+}
+#result {
+	text-align:center;
+	padding: 1em 1em 1em 1em;
+	border: solid black 1px;
+	border-radius: 5px;
+	position:absolute;
+	background:#f6f5f6;
+	top:3vh;
+	right:3vh;
+	height:80%;
+	width:55%;
+	z-index:9000;
+	overflow-y:scroll;
+}
